@@ -11,6 +11,8 @@ import Interpolate
 
 class LightView: UIView {
 
+    var lastLocation = CGPoint.zero
+    
     lazy var tapRecognizer: UITapGestureRecognizer = {
         let tap = UITapGestureRecognizer(target: self, action: #selector(handle(tap:)))
         return tap
@@ -45,7 +47,7 @@ class LightView: UIView {
     func setupUI() {
         self.addGestureRecognizer(self.tapRecognizer)
         self.addGestureRecognizer(self.panRecognizer)
-        
+
         let colors = Light.all.flatMap { (light) -> UIColor? in
             return light.color
         }
@@ -67,30 +69,24 @@ extension LightView {
         
         if location.y < (self.frame.height/2) {
             // upper half
-            self.updateProgress(delta: 0.12, animated: true)
+            self.updateProgress(delta: -(1.0/CGFloat(Light.all.count)), animated: true)
         } else {
             // lower half
-            self.updateProgress(delta: -0.12, animated: true)
+            self.updateProgress(delta: (1.0/CGFloat(Light.all.count)), animated: true)
         }
     }
     
     /// Handle pan gesture
     func handle(pan: UIPanGestureRecognizer) {
-        // let location = pan.location(in: self)
-        // let translation = pan.translation(in: self)
-        let velocity = pan.velocity(in: self)
-        print("velocity: \(velocity.y)")
-        let positive = velocity.y > 0
+        let location = pan.location(in: self)
+        let delta = self.lastLocation.y - location.y
+        self.lastLocation = location
         
         switch pan.state {
-        case .began:
-            break
         case .changed:
-            // self.goTo(progress: (fabs(translation.y)/500.0), duration: 0.0)
-            self.updateProgress(delta: positive ? -0.01 : 0.01)
-        case .ended:
-            break
-
+            let d = -delta / 400
+            self.updateProgress(delta: d)
+            
         default:
             break
         }
