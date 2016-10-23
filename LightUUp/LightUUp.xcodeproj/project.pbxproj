@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F324ACC1DBCE766000E9916 /* Light.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F324ACB1DBCE766000E9916 /* Light.swift */; };
 		1F48DB181DBCCBAA00BA2EB6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F48DB171DBCCBAA00BA2EB6 /* Assets.xcassets */; };
-		1F48DB1E1DBCD08B00BA2EB6 /* Light.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F48DB1D1DBCD08B00BA2EB6 /* Light.swift */; };
 		1F48DB201DBCD7D700BA2EB6 /* LightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F48DB1F1DBCD7D700BA2EB6 /* LightView.swift */; };
 		1F733FE31DBBE5AA00613A06 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F733FE21DBBE5AA00613A06 /* AppDelegate.swift */; };
 		1F733FE51DBBE5AA00613A06 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F733FE41DBBE5AA00613A06 /* ViewController.swift */; };
@@ -18,8 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1F324ACB1DBCE766000E9916 /* Light.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Light.swift; path = Models/Light.swift; sourceTree = "<group>"; };
 		1F48DB171DBCCBAA00BA2EB6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Resources/Assets.xcassets; sourceTree = SOURCE_ROOT; };
-		1F48DB1D1DBCD08B00BA2EB6 /* Light.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Light.swift; path = "Strings 'n' Stuff/Light.swift"; sourceTree = "<group>"; };
 		1F48DB1F1DBCD7D700BA2EB6 /* LightView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LightView.swift; path = Views/LightView.swift; sourceTree = "<group>"; };
 		1F733FDF1DBBE5AA00613A06 /* LightUUp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LightUUp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F733FE21DBBE5AA00613A06 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -61,12 +61,12 @@
 			name = Views;
 			sourceTree = "<group>";
 		};
-		1F48DB1C1DBCD06900BA2EB6 /* Strings 'n' Stuff */ = {
+		1F48DB1C1DBCD06900BA2EB6 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				1F48DB1D1DBCD08B00BA2EB6 /* Light.swift */,
+				1F324ACB1DBCE766000E9916 /* Light.swift */,
 			);
-			name = "Strings 'n' Stuff";
+			name = Models;
 			sourceTree = "<group>";
 		};
 		1F733FD61DBBE5AA00613A06 = {
@@ -93,7 +93,7 @@
 				1F733FE21DBBE5AA00613A06 /* AppDelegate.swift */,
 				1F733FE41DBBE5AA00613A06 /* ViewController.swift */,
 				1F48DB1B1DBCCE8000BA2EB6 /* Views */,
-				1F48DB1C1DBCD06900BA2EB6 /* Strings 'n' Stuff */,
+				1F48DB1C1DBCD06900BA2EB6 /* Models */,
 				1F48DB1A1DBCCE5300BA2EB6 /* Storyboards */,
 				1F48DB171DBCCBAA00BA2EB6 /* Assets.xcassets */,
 				1F733FEE1DBBE5AA00613A06 /* Info.plist */,
@@ -148,7 +148,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0800;
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = "Fabian Ehlert";
 				TargetAttributes = {
 					1F733FDE1DBBE5AA00613A06 = {
@@ -244,7 +244,7 @@
 			files = (
 				1F733FE51DBBE5AA00613A06 /* ViewController.swift in Sources */,
 				1F48DB201DBCD7D700BA2EB6 /* LightView.swift in Sources */,
-				1F48DB1E1DBCD08B00BA2EB6 /* Light.swift in Sources */,
+				1F324ACC1DBCE766000E9916 /* Light.swift in Sources */,
 				1F733FE31DBBE5AA00613A06 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -289,6 +289,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -311,7 +312,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -339,6 +340,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -355,7 +357,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -368,10 +370,11 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 54386F57710AF7677645988F /* Pods-LightUUp.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 8ZBZEMF37H;
 				INFOPLIST_FILE = LightUUp/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.fabianehlert.LightUUp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -383,10 +386,11 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FE81C91D9C8CCE4864C86D95 /* Pods-LightUUp.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 8ZBZEMF37H;
 				INFOPLIST_FILE = LightUUp/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.fabianehlert.LightUUp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
