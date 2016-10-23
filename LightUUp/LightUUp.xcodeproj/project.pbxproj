@@ -7,21 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F48DB181DBCCBAA00BA2EB6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F48DB171DBCCBAA00BA2EB6 /* Assets.xcassets */; };
 		1F733FE31DBBE5AA00613A06 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F733FE21DBBE5AA00613A06 /* AppDelegate.swift */; };
 		1F733FE51DBBE5AA00613A06 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F733FE41DBBE5AA00613A06 /* ViewController.swift */; };
 		1F733FE81DBBE5AA00613A06 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F733FE61DBBE5AA00613A06 /* Main.storyboard */; };
-		1F733FEA1DBBE5AA00613A06 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F733FE91DBBE5AA00613A06 /* Assets.xcassets */; };
 		1F733FED1DBBE5AA00613A06 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F733FEB1DBBE5AA00613A06 /* LaunchScreen.storyboard */; };
+		77AB50E180B74E93E66E81F8 /* Pods_LightUUp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93D861681EA10B6EE04BA3BE /* Pods_LightUUp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1F48DB171DBCCBAA00BA2EB6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Resources/Assets.xcassets; sourceTree = SOURCE_ROOT; };
 		1F733FDF1DBBE5AA00613A06 /* LightUUp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LightUUp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F733FE21DBBE5AA00613A06 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1F733FE41DBBE5AA00613A06 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1F733FE71DBBE5AA00613A06 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		1F733FE91DBBE5AA00613A06 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1F733FEC1DBBE5AA00613A06 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1F733FEE1DBBE5AA00613A06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		54386F57710AF7677645988F /* Pods-LightUUp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LightUUp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LightUUp/Pods-LightUUp.debug.xcconfig"; sourceTree = "<group>"; };
+		93D861681EA10B6EE04BA3BE /* Pods_LightUUp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LightUUp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE81C91D9C8CCE4864C86D95 /* Pods-LightUUp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LightUUp.release.xcconfig"; path = "Pods/Target Support Files/Pods-LightUUp/Pods-LightUUp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77AB50E180B74E93E66E81F8 /* Pods_LightUUp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,8 @@
 			children = (
 				1F733FE11DBBE5AA00613A06 /* LightUUp */,
 				1F733FE01DBBE5AA00613A06 /* Products */,
+				295F691AE624D01B89928976 /* Pods */,
+				D68CF7496CF390370996C607 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,11 +64,28 @@
 				1F733FE21DBBE5AA00613A06 /* AppDelegate.swift */,
 				1F733FE41DBBE5AA00613A06 /* ViewController.swift */,
 				1F733FE61DBBE5AA00613A06 /* Main.storyboard */,
-				1F733FE91DBBE5AA00613A06 /* Assets.xcassets */,
 				1F733FEB1DBBE5AA00613A06 /* LaunchScreen.storyboard */,
+				1F48DB171DBCCBAA00BA2EB6 /* Assets.xcassets */,
 				1F733FEE1DBBE5AA00613A06 /* Info.plist */,
 			);
 			path = LightUUp;
+			sourceTree = "<group>";
+		};
+		295F691AE624D01B89928976 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				54386F57710AF7677645988F /* Pods-LightUUp.debug.xcconfig */,
+				FE81C91D9C8CCE4864C86D95 /* Pods-LightUUp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D68CF7496CF390370996C607 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				93D861681EA10B6EE04BA3BE /* Pods_LightUUp.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1F733FF11DBBE5AA00613A06 /* Build configuration list for PBXNativeTarget "LightUUp" */;
 			buildPhases = (
+				36135F286248926FAF46A30D /* [CP] Check Pods Manifest.lock */,
 				1F733FDB1DBBE5AA00613A06 /* Sources */,
 				1F733FDC1DBBE5AA00613A06 /* Frameworks */,
 				1F733FDD1DBBE5AA00613A06 /* Resources */,
+				6FA3AE9FF0DCB8CB2986407B /* [CP] Embed Pods Frameworks */,
+				6B5E18257B3459BC030F61A3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -125,12 +152,60 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F733FED1DBBE5AA00613A06 /* LaunchScreen.storyboard in Resources */,
-				1F733FEA1DBBE5AA00613A06 /* Assets.xcassets in Resources */,
+				1F48DB181DBCCBAA00BA2EB6 /* Assets.xcassets in Resources */,
 				1F733FE81DBBE5AA00613A06 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		36135F286248926FAF46A30D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6B5E18257B3459BC030F61A3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LightUUp/Pods-LightUUp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6FA3AE9FF0DCB8CB2986407B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LightUUp/Pods-LightUUp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1F733FDB1DBBE5AA00613A06 /* Sources */ = {
@@ -259,6 +334,7 @@
 		};
 		1F733FF21DBBE5AA00613A06 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 54386F57710AF7677645988F /* Pods-LightUUp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 8ZBZEMF37H;
@@ -272,6 +348,7 @@
 		};
 		1F733FF31DBBE5AA00613A06 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE81C91D9C8CCE4864C86D95 /* Pods-LightUUp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 8ZBZEMF37H;
@@ -302,6 +379,7 @@
 				1F733FF31DBBE5AA00613A06 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
