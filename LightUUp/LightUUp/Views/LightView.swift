@@ -83,7 +83,7 @@ class LightView: UIView {
             self?.backgroundColor = color
         })
         
-        self.temperature = Interpolate(from: 1900, to: 20000, apply: {
+        self.temperature = Interpolate(from: 1900, to: 20000, function: BasicInterpolation.easeOut, apply: {
             [weak self] (temp) in
             self?.temperatureLabel.pushTransition(duration: 0.1)
             self?.temperatureLabel.text = "\(temp)K"
