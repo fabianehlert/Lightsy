@@ -1,6 +1,6 @@
 //
 //  ViewController.swift
-//  LightUUp
+//  Lightsy
 //
 //  Created by Fabian Ehlert on 22.10.16.
 //  Copyright © 2016 Fabian Ehlert. All rights reserved.

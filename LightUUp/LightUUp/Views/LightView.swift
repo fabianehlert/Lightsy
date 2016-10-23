@@ -1,6 +1,6 @@
 //
 //  LightView.swift
-//  LightUUp
+//  Lightsy
 //
 //  Created by Fabian Ehlert on 23.10.16.
 //  Copyright © 2016 Fabian Ehlert. All rights reserved.
