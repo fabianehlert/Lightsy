@@ -54,7 +54,7 @@ class LightView: UIView {
             [weak self] (color) in
             self?.backgroundColor = color
         })
-        self.update(progress: 0.0)
+        self.goTo(progress: 0.0, duration: 0.0)
     }
     
 }
@@ -63,28 +63,31 @@ extension LightView {
     
     /// Handle tap gesture
     func handle(tap: UITapGestureRecognizer) {
-        guard let colorProgress = self.color?.progress else { return }
         let location = tap.location(in: self)
         
         if location.y < (self.frame.height/2) {
             // upper half
-            self.animate(progress: colorProgress + 0.12)
+            self.updateProgress(delta: 0.12, animated: true)
         } else {
             // lower half
-            self.animate(progress: colorProgress - 0.12)
+            self.updateProgress(delta: -0.12, animated: true)
         }
     }
     
     /// Handle pan gesture
     func handle(pan: UIPanGestureRecognizer) {
         // let location = pan.location(in: self)
-        let translation = pan.translation(in: self)
+        // let translation = pan.translation(in: self)
+        let velocity = pan.velocity(in: self)
+        print("velocity: \(velocity.y)")
+        let positive = velocity.y > 0
         
         switch pan.state {
         case .began:
             break
         case .changed:
-            self.update(progress: (fabs(translation.y)/500.0))
+            // self.goTo(progress: (fabs(translation.y)/500.0), duration: 0.0)
+            self.updateProgress(delta: positive ? -0.01 : 0.01)
         case .ended:
             break
 
@@ -96,13 +99,27 @@ extension LightView {
 }
 
 extension LightView {
-    /// Call continuously to update the progress of animations
-    func update(progress: CGFloat) {
-        self.color?.progress = progress
+    /// Update progress by given delta.
+    func updateProgress(delta: CGFloat, animated: Bool = false) {
+        guard let progress = self.color?.progress else { return }
+        self.goTo(progress: progress + delta, duration: animated ? 0.7 : 0.0)
     }
     
-    /// Call to animate jump to a specific progress point.
-    func animate(progress: CGFloat, duration: CGFloat = 0.6) {
-        self.color?.animate(progress, duration: duration)
+    /// Go to specific progress position.
+    func goTo(progress: CGFloat, duration: CGFloat = 0.7) {
+        let p = progress.fitTo(range: 0.0...1.0)
+        
+        if duration != 0.0 {
+            self.color?.animate(p, duration: duration)
+        } else {
+            self.color?.progress = p
+        }
+    }
+}
+
+extension CGFloat {
+    func fitTo(range: ClosedRange<CGFloat>) -> CGFloat {
+        if range ~= self { return self }
+        return [range.lowerBound, range.upperBound].enumerated().min(by: { abs($0.1 - self) < abs($1.1 - self) })?.element ?? 0.0
     }
 }
