@@ -21,7 +21,17 @@ enum Light {
     overcastSky,
     clearBlueSky
     
-    static let all = [""]
+    static let all: [Light] = [
+        candle,
+        tungsten40W,
+        tungsten100W,
+        halogen,
+        carbonArc,
+        highNoonSun,
+        directSun,
+        overcastSky,
+        clearBlueSky
+    ]
 }
 
 extension Light {

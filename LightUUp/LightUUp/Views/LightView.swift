@@ -16,6 +16,7 @@ class LightView: UIView {
         return pan
     }()
     
+    
     // MARK: Animations
     
     var color: Interpolate?
@@ -32,24 +33,22 @@ class LightView: UIView {
         super.init(coder: aDecoder)
         self.setupUI()
     }
-    
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
-    }
-    */
+
     
     // MARK: Setup
     
     func setupUI() {
         self.addGestureRecognizer(panRecognizer)
         
-        color = Interpolate(from: UIColor.black, to: UIColor.white, apply: {
+        let colors = Light.all.flatMap { (light) -> UIColor? in
+            return light.color
+        }
+        
+        self.color = Interpolate(values: colors, apply: {
             [weak self] (color) in
             self?.backgroundColor = color
         })
+        self.update(progress: 0.0)
     }
     
 }
@@ -59,15 +58,15 @@ extension LightView {
     /// Handle pan gesture
     func handle(pan: UIPanGestureRecognizer) {
         // let location = pan.location(in: self)
-        // let translation = pan.translation(in: self)
+        let translation = pan.translation(in: self)
         
         switch pan.state {
         case .began:
-            print("Began")
+            break
         case .changed:
-            print("Changed")
+            self.update(progress: (fabs(translation.y)/500.0))
         case .ended:
-            print("Ended")
+            break
 
         default:
             break
@@ -76,11 +75,12 @@ extension LightView {
     
     /// Call continuously to update the progress of animations
     func update(progress: CGFloat) {
-        
+        self.color?.progress = progress
     }
     
     /// Call to animate jump to a specific progress point.
     func animate(progress: CGFloat, duration: CGFloat = 0.2) {
-        
+        self.color?.animate(progress, duration: duration)
     }
+    
 }
