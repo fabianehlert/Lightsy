@@ -11,6 +11,11 @@ import Interpolate
 
 class LightView: UIView {
 
+    lazy var tapRecognizer: UITapGestureRecognizer = {
+        let tap = UITapGestureRecognizer(target: self, action: #selector(handle(tap:)))
+        return tap
+    }()
+    
     lazy var panRecognizer: UIPanGestureRecognizer = {
         let pan = UIPanGestureRecognizer(target: self, action: #selector(handle(pan:)))
         return pan
@@ -38,7 +43,8 @@ class LightView: UIView {
     // MARK: Setup
     
     func setupUI() {
-        self.addGestureRecognizer(panRecognizer)
+        self.addGestureRecognizer(self.tapRecognizer)
+        self.addGestureRecognizer(self.panRecognizer)
         
         let colors = Light.all.flatMap { (light) -> UIColor? in
             return light.color
@@ -54,6 +60,20 @@ class LightView: UIView {
 }
 
 extension LightView {
+    
+    /// Handle tap gesture
+    func handle(tap: UITapGestureRecognizer) {
+        guard let colorProgress = self.color?.progress else { return }
+        let location = tap.location(in: self)
+        
+        if location.y < (self.frame.height/2) {
+            // upper half
+            self.animate(progress: colorProgress + 0.12)
+        } else {
+            // lower half
+            self.animate(progress: colorProgress - 0.12)
+        }
+    }
     
     /// Handle pan gesture
     func handle(pan: UIPanGestureRecognizer) {
@@ -73,14 +93,16 @@ extension LightView {
         }
     }
     
+}
+
+extension LightView {
     /// Call continuously to update the progress of animations
     func update(progress: CGFloat) {
         self.color?.progress = progress
     }
     
     /// Call to animate jump to a specific progress point.
-    func animate(progress: CGFloat, duration: CGFloat = 0.2) {
+    func animate(progress: CGFloat, duration: CGFloat = 0.6) {
         self.color?.animate(progress, duration: duration)
     }
-    
 }
