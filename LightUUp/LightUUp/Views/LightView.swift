@@ -79,12 +79,12 @@ extension LightView {
     /// Handle pan gesture
     func handle(pan: UIPanGestureRecognizer) {
         let location = pan.location(in: self)
-        let delta = self.lastLocation.y - location.y
+        let deltaY = self.lastLocation.y - location.y
         self.lastLocation = location
         
         switch pan.state {
         case .changed:
-            let d = -delta / 400
+            let d = -deltaY / 400
             self.updateProgress(delta: d)
             
         default:
