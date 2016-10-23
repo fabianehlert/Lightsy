@@ -132,6 +132,9 @@ extension LightView {
             // lower half
             self.updateProgress(delta: (1.0/CGFloat(Light.all.count)), animated: true)
         }
+        
+        self.showTemperature()
+        self.hideTemperature(delay: 1.0)
     }
     
     /// Handle pan gesture
