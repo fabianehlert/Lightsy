@@ -12,3 +12,8 @@ enum Defaults: String {
     case
     firstAppLaunch = "letLightsyFirstAppLaunch"
 }
+
+enum Segue: String {
+    case
+    showCopyright = "showCopyright"
+}

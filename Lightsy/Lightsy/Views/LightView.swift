@@ -9,8 +9,18 @@
 import UIKit
 import Interpolate
 
+protocol LightViewDelegate {
+    /// LightView was touched
+    func didInteract()
+}
+
 class LightView: UIView {
 
+    // MARK: Delegate
+    
+    var delegate: LightViewDelegate?
+    
+    
     // MARK: Gestures
     
     fileprivate var guidePresent = false
@@ -38,6 +48,7 @@ class LightView: UIView {
         label.font = UIFont.systemFont(ofSize: 66, weight: UIFontWeightThin)
         return label
     }()
+    
     
     // MARK: Animations
     
@@ -131,6 +142,7 @@ extension LightView {
     
     /// Handle tap gesture
     func handle(tap: UITapGestureRecognizer) {
+        self.delegate?.didInteract()
         // Remove guide/finger animation
         self.dismissGuideIfPresent()
         
@@ -150,6 +162,7 @@ extension LightView {
     
     /// Handle pan gesture
     func handle(pan: UIPanGestureRecognizer) {
+        self.delegate?.didInteract()
         // Remove guide/finger animation
         self.dismissGuideIfPresent()
 

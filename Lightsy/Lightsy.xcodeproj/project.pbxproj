@@ -16,6 +16,7 @@
 		1FF58C8D1DBE28CC003D0784 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF58C8C1DBE28CC003D0784 /* Strings.swift */; };
 		1FF58C911DBE2A8A003D0784 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF58C901DBE2A8A003D0784 /* ViewController.swift */; };
 		1FF58C941DBE37AE003D0784 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF58C931DBE37AE003D0784 /* Extensions.swift */; };
+		1FF58C961DBE8239003D0784 /* CopyrightTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF58C951DBE8239003D0784 /* CopyrightTableViewController.swift */; };
 		660CF22C3E10C2811CBB20B1 /* Pods_Lightsy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FB746C802D32A755C957FF3 /* Pods_Lightsy.framework */; };
 /* End PBXBuildFile section */
 
@@ -32,6 +33,7 @@
 		1FF58C8E1DBE29E6003D0784 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = Resources/Info.plist; sourceTree = SOURCE_ROOT; };
 		1FF58C901DBE2A8A003D0784 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = Lightsy/Controller/ViewController.swift; sourceTree = SOURCE_ROOT; };
 		1FF58C931DBE37AE003D0784 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = Lightsy/Extensions/Extensions.swift; sourceTree = SOURCE_ROOT; };
+		1FF58C951DBE8239003D0784 /* CopyrightTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CopyrightTableViewController.swift; path = Lightsy/Controller/CopyrightTableViewController.swift; sourceTree = SOURCE_ROOT; };
 		3FB746C802D32A755C957FF3 /* Pods_Lightsy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Lightsy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CE4B7E6647C11467D258274 /* Pods-Lightsy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lightsy.release.xcconfig"; path = "Pods/Target Support Files/Pods-Lightsy/Pods-Lightsy.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -120,6 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				1FF58C901DBE2A8A003D0784 /* ViewController.swift */,
+				1FF58C951DBE8239003D0784 /* CopyrightTableViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -276,6 +279,7 @@
 				1FF58C911DBE2A8A003D0784 /* ViewController.swift in Sources */,
 				1FF58C941DBE37AE003D0784 /* Extensions.swift in Sources */,
 				1FB347B51DBE211C00DC5C7F /* AppDelegate.swift in Sources */,
+				1FF58C961DBE8239003D0784 /* CopyrightTableViewController.swift in Sources */,
 				1FB347B91DBE212A00DC5C7F /* LightView.swift in Sources */,
 				1FF58C8D1DBE28CC003D0784 /* Strings.swift in Sources */,
 				1FB347BB1DBE213A00DC5C7F /* Light.swift in Sources */,
