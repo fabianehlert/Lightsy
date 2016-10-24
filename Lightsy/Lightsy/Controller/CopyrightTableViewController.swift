@@ -9,7 +9,7 @@
 import UIKit
 
 class CopyrightTableViewController: UITableViewController {
-
+    
     // MARK: ViewController lifecycle
     
     override func viewDidLoad() {
@@ -67,9 +67,26 @@ class CopyrightTableViewController: UITableViewController {
     }
     
     
-    // MARK: TableViewDelegate
+    // MARK: UITableViewDelegate
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if indexPath.section == 0 {
+            switch indexPath.row {
+            case 0:
+                UIApplication.shared.openURL(URL(string: "https://www.fabianehlert.com")!)
+            default:
+                break
+            }
+        } else if indexPath.section == 1 {
+            switch indexPath.row {
+            case 0:
+                UIApplication.shared.openURL(URL(string: "https://github.com/marmelroy/Interpolate")!)
+            case 1:
+                UIApplication.shared.openURL(URL(string: "https://icons8.com/")!)
+            default:
+                break
+            }
+        }
         tableView.deselectRow(at: indexPath, animated: true)
     }
     
