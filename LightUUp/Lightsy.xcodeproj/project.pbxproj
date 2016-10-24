@@ -14,22 +14,22 @@
 		1F733FE51DBBE5AA00613A06 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F733FE41DBBE5AA00613A06 /* ViewController.swift */; };
 		1F733FE81DBBE5AA00613A06 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F733FE61DBBE5AA00613A06 /* Main.storyboard */; };
 		1F733FED1DBBE5AA00613A06 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F733FEB1DBBE5AA00613A06 /* LaunchScreen.storyboard */; };
-		77AB50E180B74E93E66E81F8 /* Pods_LightUUp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93D861681EA10B6EE04BA3BE /* Pods_LightUUp.framework */; };
+		660CF22C3E10C2811CBB20B1 /* Pods_Lightsy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FB746C802D32A755C957FF3 /* Pods_Lightsy.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1382917B9232120DF66022AB /* Pods-Lightsy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lightsy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Lightsy/Pods-Lightsy.debug.xcconfig"; sourceTree = "<group>"; };
 		1F324ACB1DBCE766000E9916 /* Light.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Light.swift; path = Models/Light.swift; sourceTree = "<group>"; };
 		1F48DB171DBCCBAA00BA2EB6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Resources/Assets.xcassets; sourceTree = SOURCE_ROOT; };
 		1F48DB1F1DBCD7D700BA2EB6 /* LightView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LightView.swift; path = Views/LightView.swift; sourceTree = "<group>"; };
-		1F733FDF1DBBE5AA00613A06 /* LightUUp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LightUUp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F733FDF1DBBE5AA00613A06 /* Lightsy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lightsy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F733FE21DBBE5AA00613A06 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1F733FE41DBBE5AA00613A06 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1F733FE71DBBE5AA00613A06 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1F733FEC1DBBE5AA00613A06 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1F733FEE1DBBE5AA00613A06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		54386F57710AF7677645988F /* Pods-LightUUp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LightUUp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LightUUp/Pods-LightUUp.debug.xcconfig"; sourceTree = "<group>"; };
-		93D861681EA10B6EE04BA3BE /* Pods_LightUUp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LightUUp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FE81C91D9C8CCE4864C86D95 /* Pods-LightUUp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LightUUp.release.xcconfig"; path = "Pods/Target Support Files/Pods-LightUUp/Pods-LightUUp.release.xcconfig"; sourceTree = "<group>"; };
+		3FB746C802D32A755C957FF3 /* Pods_Lightsy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Lightsy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CE4B7E6647C11467D258274 /* Pods-Lightsy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lightsy.release.xcconfig"; path = "Pods/Target Support Files/Pods-Lightsy/Pods-Lightsy.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,7 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				77AB50E180B74E93E66E81F8 /* Pods_LightUUp.framework in Frameworks */,
+				660CF22C3E10C2811CBB20B1 /* Pods_Lightsy.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,7 +72,7 @@
 		1F733FD61DBBE5AA00613A06 = {
 			isa = PBXGroup;
 			children = (
-				1F733FE11DBBE5AA00613A06 /* LightUUp */,
+				1F733FE11DBBE5AA00613A06 /* Lightsy */,
 				1F733FE01DBBE5AA00613A06 /* Products */,
 				295F691AE624D01B89928976 /* Pods */,
 				D68CF7496CF390370996C607 /* Frameworks */,
@@ -82,12 +82,12 @@
 		1F733FE01DBBE5AA00613A06 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1F733FDF1DBBE5AA00613A06 /* LightUUp.app */,
+				1F733FDF1DBBE5AA00613A06 /* Lightsy.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		1F733FE11DBBE5AA00613A06 /* LightUUp */ = {
+		1F733FE11DBBE5AA00613A06 /* Lightsy */ = {
 			isa = PBXGroup;
 			children = (
 				1F733FE21DBBE5AA00613A06 /* AppDelegate.swift */,
@@ -98,14 +98,15 @@
 				1F48DB171DBCCBAA00BA2EB6 /* Assets.xcassets */,
 				1F733FEE1DBBE5AA00613A06 /* Info.plist */,
 			);
+			name = Lightsy;
 			path = LightUUp;
 			sourceTree = "<group>";
 		};
 		295F691AE624D01B89928976 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				54386F57710AF7677645988F /* Pods-LightUUp.debug.xcconfig */,
-				FE81C91D9C8CCE4864C86D95 /* Pods-LightUUp.release.xcconfig */,
+				1382917B9232120DF66022AB /* Pods-Lightsy.debug.xcconfig */,
+				6CE4B7E6647C11467D258274 /* Pods-Lightsy.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -113,7 +114,7 @@
 		D68CF7496CF390370996C607 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				93D861681EA10B6EE04BA3BE /* Pods_LightUUp.framework */,
+				3FB746C802D32A755C957FF3 /* Pods_Lightsy.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -121,9 +122,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1F733FDE1DBBE5AA00613A06 /* LightUUp */ = {
+		1F733FDE1DBBE5AA00613A06 /* Lightsy */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1F733FF11DBBE5AA00613A06 /* Build configuration list for PBXNativeTarget "LightUUp" */;
+			buildConfigurationList = 1F733FF11DBBE5AA00613A06 /* Build configuration list for PBXNativeTarget "Lightsy" */;
 			buildPhases = (
 				36135F286248926FAF46A30D /* [CP] Check Pods Manifest.lock */,
 				1F733FDB1DBBE5AA00613A06 /* Sources */,
@@ -136,9 +137,9 @@
 			);
 			dependencies = (
 			);
-			name = LightUUp;
+			name = Lightsy;
 			productName = LightUUp;
-			productReference = 1F733FDF1DBBE5AA00613A06 /* LightUUp.app */;
+			productReference = 1F733FDF1DBBE5AA00613A06 /* Lightsy.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -158,7 +159,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 1F733FDA1DBBE5AA00613A06 /* Build configuration list for PBXProject "LightUUp" */;
+			buildConfigurationList = 1F733FDA1DBBE5AA00613A06 /* Build configuration list for PBXProject "Lightsy" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -171,7 +172,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1F733FDE1DBBE5AA00613A06 /* LightUUp */,
+				1F733FDE1DBBE5AA00613A06 /* Lightsy */,
 			);
 		};
 /* End PBXProject section */
@@ -217,7 +218,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LightUUp/Pods-LightUUp-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Lightsy/Pods-Lightsy-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		6FA3AE9FF0DCB8CB2986407B /* [CP] Embed Pods Frameworks */ = {
@@ -232,7 +233,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LightUUp/Pods-LightUUp-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Lightsy/Pods-Lightsy-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -368,7 +369,7 @@
 		};
 		1F733FF21DBBE5AA00613A06 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 54386F57710AF7677645988F /* Pods-LightUUp.debug.xcconfig */;
+			baseConfigurationReference = 1382917B9232120DF66022AB /* Pods-Lightsy.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -376,7 +377,7 @@
 				INFOPLIST_FILE = LightUUp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.fabianehlert.LightUUp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fabianehlert.Lightsy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -384,7 +385,7 @@
 		};
 		1F733FF31DBBE5AA00613A06 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FE81C91D9C8CCE4864C86D95 /* Pods-LightUUp.release.xcconfig */;
+			baseConfigurationReference = 6CE4B7E6647C11467D258274 /* Pods-Lightsy.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -392,7 +393,7 @@
 				INFOPLIST_FILE = LightUUp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.fabianehlert.LightUUp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fabianehlert.Lightsy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -401,7 +402,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1F733FDA1DBBE5AA00613A06 /* Build configuration list for PBXProject "LightUUp" */ = {
+		1F733FDA1DBBE5AA00613A06 /* Build configuration list for PBXProject "Lightsy" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1F733FEF1DBBE5AA00613A06 /* Debug */,
@@ -410,7 +411,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1F733FF11DBBE5AA00613A06 /* Build configuration list for PBXNativeTarget "LightUUp" */ = {
+		1F733FF11DBBE5AA00613A06 /* Build configuration list for PBXNativeTarget "Lightsy" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1F733FF21DBBE5AA00613A06 /* Debug */,
