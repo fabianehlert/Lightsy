@@ -9,12 +9,12 @@
 /* Begin PBXBuildFile section */
 		1F48DB181DBCCBAA00BA2EB6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F48DB171DBCCBAA00BA2EB6 /* Assets.xcassets */; };
 		1FB347B51DBE211C00DC5C7F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB347B41DBE211C00DC5C7F /* AppDelegate.swift */; };
-		1FB347B71DBE212200DC5C7F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB347B61DBE212200DC5C7F /* ViewController.swift */; };
 		1FB347B91DBE212A00DC5C7F /* LightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB347B81DBE212A00DC5C7F /* LightView.swift */; };
 		1FB347BB1DBE213A00DC5C7F /* Light.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB347BA1DBE213A00DC5C7F /* Light.swift */; };
 		1FB347C01DBE216B00DC5C7F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FB347BE1DBE216B00DC5C7F /* LaunchScreen.storyboard */; };
 		1FB347C11DBE216B00DC5C7F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FB347BF1DBE216B00DC5C7F /* Main.storyboard */; };
 		1FF58C8D1DBE28CC003D0784 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF58C8C1DBE28CC003D0784 /* Strings.swift */; };
+		1FF58C911DBE2A8A003D0784 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF58C901DBE2A8A003D0784 /* ViewController.swift */; };
 		660CF22C3E10C2811CBB20B1 /* Pods_Lightsy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FB746C802D32A755C957FF3 /* Pods_Lightsy.framework */; };
 /* End PBXBuildFile section */
 
@@ -23,13 +23,13 @@
 		1F48DB171DBCCBAA00BA2EB6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Resources/Assets.xcassets; sourceTree = SOURCE_ROOT; };
 		1F733FDF1DBBE5AA00613A06 /* Lightsy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lightsy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FB347B41DBE211C00DC5C7F /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = Lightsy/AppDelegate.swift; sourceTree = SOURCE_ROOT; };
-		1FB347B61DBE212200DC5C7F /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = Lightsy/ViewController.swift; sourceTree = SOURCE_ROOT; };
 		1FB347B81DBE212A00DC5C7F /* LightView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LightView.swift; path = Lightsy/Views/LightView.swift; sourceTree = SOURCE_ROOT; };
 		1FB347BA1DBE213A00DC5C7F /* Light.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Light.swift; path = Lightsy/Models/Light.swift; sourceTree = SOURCE_ROOT; };
 		1FB347BE1DBE216B00DC5C7F /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = Lightsy/Storyboards/LaunchScreen.storyboard; sourceTree = SOURCE_ROOT; };
 		1FB347BF1DBE216B00DC5C7F /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Lightsy/Storyboards/Main.storyboard; sourceTree = SOURCE_ROOT; };
 		1FF58C8C1DBE28CC003D0784 /* Strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Strings.swift; path = Resources/Strings.swift; sourceTree = SOURCE_ROOT; };
 		1FF58C8E1DBE29E6003D0784 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = Resources/Info.plist; sourceTree = SOURCE_ROOT; };
+		1FF58C901DBE2A8A003D0784 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = Lightsy/Controller/ViewController.swift; sourceTree = SOURCE_ROOT; };
 		3FB746C802D32A755C957FF3 /* Pods_Lightsy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Lightsy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CE4B7E6647C11467D258274 /* Pods-Lightsy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lightsy.release.xcconfig"; path = "Pods/Target Support Files/Pods-Lightsy/Pods-Lightsy.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -93,7 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				1FB347B41DBE211C00DC5C7F /* AppDelegate.swift */,
-				1FB347B61DBE212200DC5C7F /* ViewController.swift */,
+				1FF58C8F1DBE2A82003D0784 /* Controller */,
 				1F48DB1B1DBCCE8000BA2EB6 /* Views */,
 				1F48DB1C1DBCD06900BA2EB6 /* Models */,
 				1F48DB1A1DBCCE5300BA2EB6 /* Storyboards */,
@@ -111,6 +111,14 @@
 				1F48DB171DBCCBAA00BA2EB6 /* Assets.xcassets */,
 			);
 			name = Resources;
+			sourceTree = "<group>";
+		};
+		1FF58C8F1DBE2A82003D0784 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1FF58C901DBE2A8A003D0784 /* ViewController.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 		295F691AE624D01B89928976 /* Pods */ = {
@@ -254,11 +262,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FF58C911DBE2A8A003D0784 /* ViewController.swift in Sources */,
 				1FB347B51DBE211C00DC5C7F /* AppDelegate.swift in Sources */,
 				1FB347B91DBE212A00DC5C7F /* LightView.swift in Sources */,
 				1FF58C8D1DBE28CC003D0784 /* Strings.swift in Sources */,
 				1FB347BB1DBE213A00DC5C7F /* Light.swift in Sources */,
-				1FB347B71DBE212200DC5C7F /* ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
