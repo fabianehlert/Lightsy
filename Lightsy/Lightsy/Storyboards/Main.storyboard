@@ -39,21 +39,25 @@
                         <sections>
                             <tableViewSection headerTitle="About" id="ehQ-wo-PQe">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="52" id="tNL-22-39u">
-                                        <rect key="frame" x="0.0" y="120" width="375" height="52"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="90" id="tNL-22-39u">
+                                        <rect key="frame" x="0.0" y="119.5" width="375" height="90"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="tNL-22-39u" id="pYI-5I-08v">
-                                            <frame key="frameInset" width="375" height="51"/>
+                                            <frame key="frameInset" width="375" height="89.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Lightly was created in October 2016." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nMC-eZ-7ci">
-                                                    <frame key="frameInset" minX="15" minY="10" width="350" height="33"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lightsy was started in October 2016 with the idea of helping you record a video of yourself at night." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nMC-eZ-7ci">
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                     <color key="textColor" white="0.25" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="nMC-eZ-7ci" firstAttribute="leading" secondItem="pYI-5I-08v" secondAttribute="leading" constant="15" id="AZk-wD-YJz"/>
+                                                <constraint firstItem="nMC-eZ-7ci" firstAttribute="top" secondItem="pYI-5I-08v" secondAttribute="top" constant="10" id="OCd-Pk-Sno"/>
+                                                <constraint firstAttribute="trailing" secondItem="nMC-eZ-7ci" secondAttribute="trailing" constant="15" id="rky-NP-cZ6"/>
+                                                <constraint firstAttribute="bottom" secondItem="nMC-eZ-7ci" secondAttribute="bottom" constant="10" id="uGg-MM-I0m"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </cells>
@@ -61,7 +65,7 @@
                             <tableViewSection headerTitle="Third party" id="wYn-Up-I70">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="148" id="5to-NJ-vSa">
-                                        <rect key="frame" x="0.0" y="229" width="375" height="148"/>
+                                        <rect key="frame" x="0.0" y="265.5" width="375" height="148"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="5to-NJ-vSa" id="JfM-oK-xkr">
                                             <frame key="frameInset" width="342" height="147"/>
@@ -96,7 +100,7 @@ Source is available on GitHub: https://github.com/marmelroy/Interpolate</string>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="90" id="OWe-zG-WJK">
-                                        <rect key="frame" x="0.0" y="377" width="375" height="90"/>
+                                        <rect key="frame" x="0.0" y="413.5" width="375" height="90"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="OWe-zG-WJK" id="J4m-s3-F1b">
                                             <frame key="frameInset" width="342" height="89"/>
