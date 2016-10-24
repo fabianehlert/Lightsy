@@ -13,14 +13,14 @@ class LightView: UIView {
 
     // MARK: Gestures
     
-    var lastLocation = CGPoint.zero
+    fileprivate var lastLocation = CGPoint.zero
     
-    lazy var tapRecognizer: UITapGestureRecognizer = {
+    fileprivate lazy var tapRecognizer: UITapGestureRecognizer = {
         let tap = UITapGestureRecognizer(target: self, action: #selector(handle(tap:)))
         return tap
     }()
     
-    lazy var panRecognizer: UIPanGestureRecognizer = {
+    fileprivate lazy var panRecognizer: UIPanGestureRecognizer = {
         let pan = UIPanGestureRecognizer(target: self, action: #selector(handle(pan:)))
         return pan
     }()
@@ -28,7 +28,7 @@ class LightView: UIView {
     
     // MARK: UI Elements
     
-    lazy var temperatureLabel: UILabel = {
+    fileprivate lazy var temperatureLabel: UILabel = {
         let label = UILabel()
         label.backgroundColor = .clear
         label.textColor = .black
@@ -39,8 +39,8 @@ class LightView: UIView {
     
     // MARK: Animations
     
-    var color: Interpolate?
-    var temperature: Interpolate?
+    fileprivate var color: Interpolate?
+    fileprivate var temperature: Interpolate?
     
     
     // MARK: View
@@ -63,7 +63,7 @@ class LightView: UIView {
     
     // MARK: Setup
     
-    func setupUI() {
+    fileprivate func setupUI() {
         self.addGestureRecognizer(self.tapRecognizer)
         self.addGestureRecognizer(self.panRecognizer)
         
@@ -73,7 +73,7 @@ class LightView: UIView {
         self.hideTemperature(delay: 2.0)
     }
     
-    func setupInterpolate() {
+    fileprivate func setupInterpolate() {
         let colors = Light.all.flatMap { (light) -> UIColor? in
             return light.color
         }
@@ -99,19 +99,19 @@ class LightView: UIView {
     
     // MARK: Temperature label
     
-    func setupTemperatureLabel() {
+    fileprivate func setupTemperatureLabel() {
         self.temperatureLabel.frame = CGRect(x: 60, y: 60, width: 300, height: 80)
         self.temperatureLabel.center = CGPoint(x: self.center.x, y: 80)
         self.temperatureLabel.autoresizingMask = [.flexibleLeftMargin, .flexibleRightMargin]
     }
 
-    func showTemperature(delay: TimeInterval = 0.0) {
+    fileprivate func showTemperature(delay: TimeInterval = 0.0) {
         UIView.animate(withDuration: 0.3, delay: delay, options: [.curveEaseOut], animations: {
             self.temperatureLabel.alpha = 1.0
             }, completion: nil)
     }
 
-    func hideTemperature(delay: TimeInterval = 0.0) {
+    fileprivate func hideTemperature(delay: TimeInterval = 0.0) {
         UIView.animate(withDuration: 0.3, delay: delay, options: [.curveEaseOut], animations: {
             self.temperatureLabel.alpha = 0.0
         }, completion: nil)
@@ -160,13 +160,13 @@ extension LightView {
 
 extension LightView {
     /// Update progress by given delta.
-    func updateProgress(delta: CGFloat, animated: Bool = false) {
+    fileprivate func updateProgress(delta: CGFloat, animated: Bool = false) {
         guard let progress = self.color?.progress else { return }
         self.goTo(progress: progress + delta, duration: animated ? 0.7 : 0.0)
     }
     
     /// Go to specific progress position.
-    func goTo(progress: CGFloat, duration: CGFloat = 0.7) {
+    fileprivate func goTo(progress: CGFloat, duration: CGFloat = 0.7) {
         let p = progress.fitTo(range: 0.0...1.0)
         
         if duration != 0.0 {
@@ -176,5 +176,11 @@ extension LightView {
             self.color?.progress = p
             self.temperature?.progress = p
         }
+    }
+}
+
+extension LightView {
+    fileprivate func displayGuideIfNeeded() {
+        
     }
 }
