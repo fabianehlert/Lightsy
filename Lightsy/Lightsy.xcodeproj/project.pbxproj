@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		1F48DB181DBCCBAA00BA2EB6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F48DB171DBCCBAA00BA2EB6 /* Assets.xcassets */; };
+		1F56246D1DBEC2CE00BC5F8A /* LegalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F56246C1DBEC2CE00BC5F8A /* LegalViewController.swift */; };
+		1F56246F1DBEC32200BC5F8A /* Legal.html in Resources */ = {isa = PBXBuildFile; fileRef = 1F56246E1DBEC32200BC5F8A /* Legal.html */; };
 		1FB347B51DBE211C00DC5C7F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB347B41DBE211C00DC5C7F /* AppDelegate.swift */; };
 		1FB347B91DBE212A00DC5C7F /* LightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB347B81DBE212A00DC5C7F /* LightView.swift */; };
 		1FB347BB1DBE213A00DC5C7F /* Light.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB347BA1DBE213A00DC5C7F /* Light.swift */; };
@@ -23,6 +25,8 @@
 /* Begin PBXFileReference section */
 		1382917B9232120DF66022AB /* Pods-Lightsy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lightsy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Lightsy/Pods-Lightsy.debug.xcconfig"; sourceTree = "<group>"; };
 		1F48DB171DBCCBAA00BA2EB6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Resources/Assets.xcassets; sourceTree = SOURCE_ROOT; };
+		1F56246C1DBEC2CE00BC5F8A /* LegalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LegalViewController.swift; path = Lightsy/Controller/LegalViewController.swift; sourceTree = SOURCE_ROOT; };
+		1F56246E1DBEC32200BC5F8A /* Legal.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = Legal.html; path = Resources/Legal.html; sourceTree = SOURCE_ROOT; };
 		1F733FDF1DBBE5AA00613A06 /* Lightsy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lightsy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FB347B41DBE211C00DC5C7F /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = Lightsy/AppDelegate.swift; sourceTree = SOURCE_ROOT; };
 		1FB347B81DBE212A00DC5C7F /* LightView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LightView.swift; path = Lightsy/Views/LightView.swift; sourceTree = SOURCE_ROOT; };
@@ -112,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				1FF58C8E1DBE29E6003D0784 /* Info.plist */,
+				1F56246E1DBEC32200BC5F8A /* Legal.html */,
 				1FF58C8C1DBE28CC003D0784 /* Strings.swift */,
 				1F48DB171DBCCBAA00BA2EB6 /* Assets.xcassets */,
 			);
@@ -123,6 +128,7 @@
 			children = (
 				1FF58C901DBE2A8A003D0784 /* ViewController.swift */,
 				1FF58C951DBE8239003D0784 /* CopyrightTableViewController.swift */,
+				1F56246C1DBEC2CE00BC5F8A /* LegalViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -217,6 +223,7 @@
 			files = (
 				1FB347C01DBE216B00DC5C7F /* LaunchScreen.storyboard in Resources */,
 				1F48DB181DBCCBAA00BA2EB6 /* Assets.xcassets in Resources */,
+				1F56246F1DBEC32200BC5F8A /* Legal.html in Resources */,
 				1FB347C11DBE216B00DC5C7F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -276,6 +283,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F56246D1DBEC2CE00BC5F8A /* LegalViewController.swift in Sources */,
 				1FF58C911DBE2A8A003D0784 /* ViewController.swift in Sources */,
 				1FF58C941DBE37AE003D0784 /* Extensions.swift in Sources */,
 				1FB347B51DBE211C00DC5C7F /* AppDelegate.swift in Sources */,

@@ -40,10 +40,10 @@
                             <tableViewSection headerTitle="About" id="ehQ-wo-PQe">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="90" id="tNL-22-39u">
-                                        <rect key="frame" x="0.0" y="119.5" width="375" height="90"/>
+                                        <rect key="frame" x="0.0" y="120" width="375" height="90"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="tNL-22-39u" id="pYI-5I-08v">
-                                            <frame key="frameInset" width="375" height="89.5"/>
+                                            <frame key="frameInset" width="375" height="89"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lightsy was started in October 2016 with the idea of helping you record a video of yourself at night." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nMC-eZ-7ci">
@@ -60,15 +60,39 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="52" id="H5y-zk-9Qt">
+                                        <rect key="frame" x="0.0" y="210" width="375" height="52"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="H5y-zk-9Qt" id="edc-Eo-Zbq">
+                                            <frame key="frameInset" width="342" height="51"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Legal notice" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kyh-2j-elL">
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                    <color key="textColor" white="0.25" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="kyh-2j-elL" firstAttribute="top" secondItem="edc-Eo-Zbq" secondAttribute="top" constant="10" id="LF1-g9-tOS"/>
+                                                <constraint firstAttribute="trailing" secondItem="kyh-2j-elL" secondAttribute="trailing" constant="10" id="c1W-gX-yhR"/>
+                                                <constraint firstItem="kyh-2j-elL" firstAttribute="leading" secondItem="edc-Eo-Zbq" secondAttribute="leading" constant="15" id="jLB-O0-T5Y"/>
+                                                <constraint firstAttribute="bottom" secondItem="kyh-2j-elL" secondAttribute="bottom" constant="10" id="vza-zn-uyp"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="MX2-fw-Ia9" kind="show" id="wC7-YJ-TXV"/>
+                                        </connections>
+                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                             <tableViewSection headerTitle="Third party" id="wYn-Up-I70">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="148" id="5to-NJ-vSa">
-                                        <rect key="frame" x="0.0" y="265.5" width="375" height="148"/>
+                                        <rect key="frame" x="0.0" y="319" width="375" height="148"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="5to-NJ-vSa" id="JfM-oK-xkr">
-                                            <frame key="frameInset" width="342" height="147"/>
+                                            <frame key="frameInset" width="342" height="148"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Interpolate" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GEn-EC-afb">
@@ -100,10 +124,10 @@ Source is available on GitHub: https://github.com/marmelroy/Interpolate</string>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="90" id="OWe-zG-WJK">
-                                        <rect key="frame" x="0.0" y="413.5" width="375" height="90"/>
+                                        <rect key="frame" x="0.0" y="467" width="375" height="90"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="OWe-zG-WJK" id="J4m-s3-F1b">
-                                            <frame key="frameInset" width="342" height="89"/>
+                                            <frame key="frameInset" width="342" height="90"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Icons8" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1ha-Xr-pwh">
@@ -150,6 +174,41 @@ Source is available on GitHub: https://github.com/marmelroy/Interpolate</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xgQ-Br-YFe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="972" y="104.7976011994003"/>
+        </scene>
+        <!--Legal notice-->
+        <scene sceneID="TRJ-gB-LTu">
+            <objects>
+                <viewController id="MX2-fw-Ia9" customClass="LegalViewController" customModule="Lightsy" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Zti-zS-fWV"/>
+                        <viewControllerLayoutGuide type="bottom" id="fVA-UI-txc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Hzk-2H-sow">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vO1-7t-cdu">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <dataDetectorType key="dataDetectorTypes"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="vO1-7t-cdu" firstAttribute="leading" secondItem="Hzk-2H-sow" secondAttribute="leading" id="f68-bg-v0k"/>
+                            <constraint firstItem="vO1-7t-cdu" firstAttribute="top" secondItem="Hzk-2H-sow" secondAttribute="top" id="oGZ-cw-gBR"/>
+                            <constraint firstAttribute="trailing" secondItem="vO1-7t-cdu" secondAttribute="trailing" id="tm8-M3-IdY"/>
+                            <constraint firstItem="fVA-UI-txc" firstAttribute="top" secondItem="vO1-7t-cdu" secondAttribute="bottom" id="wwt-Dj-HDc"/>
+                        </constraints>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout" top="YES"/>
+                    <navigationItem key="navigationItem" title="Legal notice" id="kGx-81-EWC"/>
+                    <connections>
+                        <outlet property="webview" destination="vO1-7t-cdu" id="cPV-oo-18f"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lFC-Vx-mUS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1733.5999999999999" y="104.7976011994003"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="QT3-pZ-0hd">
