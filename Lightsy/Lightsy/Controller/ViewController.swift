@@ -39,7 +39,7 @@ class ViewController: UIViewController {
         self.lightView?.delegate = self
         if let l = self.lightView { self.view.addSubview(l) }
 
-        self.infoButton = UIButton(frame: CGRect(x: 0, y: 0, width: 33, height: 33))
+        self.infoButton = UIButton(frame: CGRect(x: 0, y: 0, width: 40, height: 40))
         self.infoButton?.center = infoButtonCenter()
         self.infoButton?.addTarget(self, action: #selector(showCopyright), for: .touchUpInside)
         self.infoButton?.setImage(#imageLiteral(resourceName: "Info"), for: .normal)
