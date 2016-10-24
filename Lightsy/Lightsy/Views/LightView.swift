@@ -89,7 +89,7 @@ class LightView: UIView {
         
         self.temperature = Interpolate(values: temps, apply: {
             [weak self] (temp) in
-            self?.temperatureLabel.pushTransition(duration: 0.1)
+            self?.temperatureLabel.fadeTransition(duration: 0.1)
             self?.temperatureLabel.text = "\(temp)K"
         })
 
@@ -189,11 +189,11 @@ extension CGFloat {
 // Usage: insert view.pushTransition right before changing content
 // http://stackoverflow.com/questions/33632266/animate-text-change-of-uilabel
 extension UIView {
-    func pushTransition(duration: CFTimeInterval) {
+    func fadeTransition(duration: CFTimeInterval) {
         let animation: CATransition = CATransition()
         animation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
         animation.type = kCATransitionFade
         animation.duration = duration
-        self.layer.add(animation, forKey: kCATransitionPush)
+        self.layer.add(animation, forKey: kCATransitionFade)
     }
 }
