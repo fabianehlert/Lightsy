@@ -17,12 +17,17 @@ class CopyrightTableViewController: UITableViewController {
         self.setupFooter()
     }
 
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
 
     fileprivate func setupFooter() {
-        let footer = UIView(frame: CGRect(x: 0, y: 0, width: tableView.frame.size.width, height: 130))
+        print(#function)
+        let footer = UIView(frame: CGRect(x: 0, y: 0, width: tableView.frame.size.width, height: 150))
         footer.backgroundColor = .clear
         
         let logo = UIImageView(frame: CGRect(x: (tableView.frame.size.width / 2) - 30, y: 0, width: 60, height: 60))
