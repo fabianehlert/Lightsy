@@ -27,12 +27,12 @@ class LightView: UIView {
     fileprivate var fingerImageView: UIImageView?
     fileprivate var lastLocation = CGPoint.zero
     
-    fileprivate let tapRecognizer: UITapGestureRecognizer = {
+    fileprivate lazy var tapRecognizer: UITapGestureRecognizer = {
         let tap = UITapGestureRecognizer(target: self, action: #selector(handle(tap:)))
         return tap
     }()
     
-    fileprivate let panRecognizer: UIPanGestureRecognizer = {
+    fileprivate lazy var panRecognizer: UIPanGestureRecognizer = {
         let pan = UIPanGestureRecognizer(target: self, action: #selector(handle(pan:)))
         return pan
     }()
@@ -40,7 +40,7 @@ class LightView: UIView {
     
     // MARK: UI Elements
     
-    fileprivate let temperatureLabel: UILabel = {
+    fileprivate lazy var temperatureLabel: UILabel = {
         let label = UILabel()
         label.backgroundColor = .clear
         label.textColor = .black
