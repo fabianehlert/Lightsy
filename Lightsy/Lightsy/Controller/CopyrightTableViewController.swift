@@ -93,7 +93,7 @@ class CopyrightTableViewController: UITableViewController {
     
     // MARK: Actions
     
-    @IBAction func close() {
+    @IBAction fileprivate func close() {
         self.dismiss(animated: true, completion: nil)
     }
 }
