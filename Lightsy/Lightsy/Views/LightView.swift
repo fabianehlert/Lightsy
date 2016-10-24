@@ -13,6 +13,8 @@ class LightView: UIView {
 
     // MARK: Gestures
     
+    fileprivate var guidePresent = false
+    fileprivate var fingerImageView: UIImageView?
     fileprivate var lastLocation = CGPoint.zero
     
     fileprivate lazy var tapRecognizer: UITapGestureRecognizer = {
@@ -58,7 +60,7 @@ class LightView: UIView {
     
     override func layoutSublayers(of layer: CALayer) {
         super.layoutSublayers(of: layer)
-        self.setupTemperatureLabel()
+        self.updateUI()
     }
     
     // MARK: Setup
@@ -68,9 +70,14 @@ class LightView: UIView {
         self.addGestureRecognizer(self.panRecognizer)
         
         self.setupInterpolate()
-
-        self.addSubview(self.temperatureLabel)
+        self.setupTemperatureLabel()
         self.hideTemperature(delay: 2.0)
+        
+        self.displayGuideIfNeeded()
+    }
+    
+    fileprivate func updateUI() {
+        // Update UI elements here
     }
     
     fileprivate func setupInterpolate() {
@@ -103,6 +110,7 @@ class LightView: UIView {
         self.temperatureLabel.frame = CGRect(x: 60, y: 60, width: 300, height: 80)
         self.temperatureLabel.center = CGPoint(x: self.center.x, y: 80)
         self.temperatureLabel.autoresizingMask = [.flexibleLeftMargin, .flexibleRightMargin]
+        self.addSubview(self.temperatureLabel)
     }
 
     fileprivate func showTemperature(delay: TimeInterval = 0.0) {
@@ -123,6 +131,9 @@ extension LightView {
     
     /// Handle tap gesture
     func handle(tap: UITapGestureRecognizer) {
+        // Remove guide/finger animation
+        self.dismissGuideIfPresent()
+        
         let location = tap.location(in: self)
         
         if location.y < (self.frame.height/2) {
@@ -139,6 +150,9 @@ extension LightView {
     
     /// Handle pan gesture
     func handle(pan: UIPanGestureRecognizer) {
+        // Remove guide/finger animation
+        self.dismissGuideIfPresent()
+
         let location = pan.location(in: self)
         let deltaY = self.lastLocation.y - location.y
         self.lastLocation = location
@@ -181,6 +195,39 @@ extension LightView {
 
 extension LightView {
     fileprivate func displayGuideIfNeeded() {
+        if UserDefaults.standard.bool(forKey: Defaults.firstAppLaunch.rawValue) { return }
+
+        self.guidePresent = true
         
+        self.fingerImageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 80, height: 80))
+        
+        guard let fingerImageView = self.fingerImageView else { return }
+        fingerImageView.center = CGPoint(x: self.center.x, y: 200)
+        fingerImageView.isUserInteractionEnabled = false
+        fingerImageView.image = #imageLiteral(resourceName: "Finger")
+        fingerImageView.backgroundColor = .clear
+        fingerImageView.alpha = 1.0
+        
+        self.addSubview(fingerImageView)
+        
+        UIView.animate(withDuration: 3.0, delay: 0.0, options: [.repeat, .autoreverse], animations: {
+            fingerImageView.frame = fingerImageView.frame.offsetBy(dx: 0, dy: 250)
+        }, completion: nil)
+    }
+    
+    fileprivate func dismissGuideIfPresent() {
+        if let fingerImageView = self.fingerImageView,
+            self.guidePresent {
+
+            UserDefaults.standard.set(true, forKey: Defaults.firstAppLaunch.rawValue)
+            UserDefaults.standard.synchronize()
+
+            self.guidePresent = false
+            UIView.animate(withDuration: 0.4, animations: {
+                fingerImageView.alpha = 0.0
+                }, completion: { completed in
+                    fingerImageView.removeFromSuperview()
+            })
+        }
     }
 }
