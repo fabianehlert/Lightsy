@@ -43,6 +43,11 @@ class ViewController: UIViewController {
         self.infoButton?.center = infoButtonCenter()
         self.infoButton?.addTarget(self, action: #selector(showCopyright), for: .touchUpInside)
         self.infoButton?.setImage(#imageLiteral(resourceName: "Info"), for: .normal)
+        self.infoButton?.layer.masksToBounds = false
+        self.infoButton?.layer.shadowColor = UIColor.black.cgColor
+        self.infoButton?.layer.shadowOffset = .zero
+        self.infoButton?.layer.shadowRadius = 10
+        self.infoButton?.layer.shadowOpacity = 0.33
         if let b = self.infoButton { self.view.addSubview(b) }
     }
 

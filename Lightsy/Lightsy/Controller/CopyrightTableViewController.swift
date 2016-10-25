@@ -10,6 +10,12 @@ import UIKit
 
 class CopyrightTableViewController: UITableViewController {
     
+    @IBOutlet fileprivate weak var shouldStoreProgressSwitch: UISwitch! {
+        didSet {
+            shouldStoreProgressSwitch.isOn = AppSetup.sharedState.shouldSaveState
+        }
+    }
+    
     // MARK: ViewController lifecycle
     
     override func viewDidLoad() {
@@ -24,14 +30,14 @@ class CopyrightTableViewController: UITableViewController {
     // MARK: UITableViewDelegate
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if indexPath.section == 0 {
+        if indexPath.section == 1 {
             switch indexPath.row {
             case 0:
                 UIApplication.shared.openURL(URL(string: "https://www.fabianehlert.com")!)
             default:
                 break
             }
-        } else if indexPath.section == 1 {
+        } else if indexPath.section == 2 {
             switch indexPath.row {
             case 0:
                 UIApplication.shared.openURL(URL(string: "https://github.com/marmelroy/Interpolate")!)
@@ -49,5 +55,9 @@ class CopyrightTableViewController: UITableViewController {
     
     @IBAction fileprivate func close() {
         self.dismiss(animated: true, completion: nil)
+    }
+    
+    @IBAction fileprivate func shouldStoreProgressStateChanged(s: UISwitch) {
+        AppSetup.sharedState.shouldSaveState = s.isOn
     }
 }

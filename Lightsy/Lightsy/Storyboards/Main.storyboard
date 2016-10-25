@@ -40,7 +40,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <view key="tableFooterView" contentMode="scaleToFill" id="v3W-rt-Eyj">
-                            <rect key="frame" x="0.0" y="521.5" width="375" height="150"/>
+                            <rect key="frame" x="0.0" y="635" width="375" height="150"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lightsy" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cho-oX-q0Y">
@@ -94,17 +94,56 @@
                             </constraints>
                         </view>
                         <sections>
+                            <tableViewSection headerTitle="Setting" id="g1m-v9-1yB">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="55" id="JUz-DX-nbS">
+                                        <rect key="frame" x="0.0" y="56" width="375" height="55"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="JUz-DX-nbS" id="0DF-ac-TUd">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="54"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Save last color" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PYW-3O-z0T">
+                                                    <rect key="frame" x="15" y="4" width="288" height="46.5"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                    <color key="textColor" white="0.25" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fXq-xi-bF4">
+                                                    <rect key="frame" x="311" y="12" width="51" height="31"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="49" id="9R4-m9-188"/>
+                                                        <constraint firstAttribute="height" constant="31" id="PGJ-0K-KCS"/>
+                                                    </constraints>
+                                                    <color key="onTintColor" red="1" green="0.57647058819999997" blue="0.16078431369999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <connections>
+                                                        <action selector="shouldStoreProgressStateChangedWithS:" destination="g3I-7c-s9C" eventType="valueChanged" id="Lmf-lO-0wW"/>
+                                                    </connections>
+                                                </switch>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="PYW-3O-z0T" secondAttribute="bottom" constant="4" id="CwM-cU-hAq"/>
+                                                <constraint firstAttribute="trailing" secondItem="fXq-xi-bF4" secondAttribute="trailing" constant="15" id="l5d-yF-f5L"/>
+                                                <constraint firstItem="fXq-xi-bF4" firstAttribute="centerY" secondItem="0DF-ac-TUd" secondAttribute="centerY" id="mzq-tb-JTj"/>
+                                                <constraint firstItem="PYW-3O-z0T" firstAttribute="top" secondItem="0DF-ac-TUd" secondAttribute="top" constant="4" id="rzV-kw-Upo"/>
+                                                <constraint firstItem="PYW-3O-z0T" firstAttribute="leading" secondItem="0DF-ac-TUd" secondAttribute="leading" constant="15" id="tOQ-CH-ceX"/>
+                                                <constraint firstItem="fXq-xi-bF4" firstAttribute="leading" secondItem="PYW-3O-z0T" secondAttribute="trailing" constant="8" id="xR1-04-KX3"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
                             <tableViewSection headerTitle="About" id="ehQ-wo-PQe">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="90" id="tNL-22-39u">
-                                        <rect key="frame" x="0.0" y="56" width="375" height="90"/>
+                                        <rect key="frame" x="0.0" y="168" width="375" height="90"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="tNL-22-39u" id="pYI-5I-08v">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="89"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="90"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lightsy was started in October 2016 with the idea of helping you record a video of yourself at night." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nMC-eZ-7ci">
-                                                    <rect key="frame" x="15" y="10" width="345" height="69.5"/>
+                                                    <rect key="frame" x="15" y="10" width="345" height="70"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                     <color key="textColor" white="0.25" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
@@ -123,10 +162,10 @@
                             <tableViewSection headerTitle="Third party" id="wYn-Up-I70">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="148" id="5to-NJ-vSa">
-                                        <rect key="frame" x="0.0" y="202" width="375" height="148"/>
+                                        <rect key="frame" x="0.0" y="315" width="375" height="148"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="5to-NJ-vSa" id="JfM-oK-xkr">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="147"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="148"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Interpolate" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GEn-EC-afb">
@@ -139,7 +178,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lBW-kZ-By0">
-                                                    <rect key="frame" x="15" y="36" width="345" height="96.5"/>
+                                                    <rect key="frame" x="15" y="36" width="345" height="97"/>
                                                     <string key="text">For smooth animations ✨ 
 Interpolate is provided under a MIT license from Roy Marmelstein.
 Source is available on GitHub: https://github.com/marmelroy/Interpolate</string>
@@ -160,10 +199,10 @@ Source is available on GitHub: https://github.com/marmelroy/Interpolate</string>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="90" id="OWe-zG-WJK">
-                                        <rect key="frame" x="0.0" y="350" width="375" height="90"/>
+                                        <rect key="frame" x="0.0" y="463" width="375" height="90"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="OWe-zG-WJK" id="J4m-s3-F1b">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="89"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="90"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Icons8" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1ha-Xr-pwh">
@@ -176,7 +215,7 @@ Source is available on GitHub: https://github.com/marmelroy/Interpolate</string>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Using Icons from Icons8. Find them here: https://icons8.com/" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yMC-Ym-ZY8">
-                                                    <rect key="frame" x="15" y="36" width="345" height="38.5"/>
+                                                    <rect key="frame" x="15" y="36" width="345" height="39"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                     <color key="textColor" white="0.5" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
@@ -208,6 +247,9 @@ Source is available on GitHub: https://github.com/marmelroy/Interpolate</string>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="shouldStoreProgressSwitch" destination="fXq-xi-bF4" id="aeV-du-Bpk"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xgQ-Br-YFe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
