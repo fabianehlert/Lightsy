@@ -36,11 +36,61 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <view key="tableFooterView" contentMode="scaleToFill" id="v3W-rt-Eyj">
+                            <rect key="frame" x="0.0" y="573.5" width="375" height="150"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lightsy" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cho-oX-q0Y">
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="20" id="ppz-Wo-8ji"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                    <color key="textColor" white="0.33000000000000002" alpha="1" colorSpace="calibratedWhite"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Crafted with ❤️ in Milky Way Galaxy." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QBT-E1-vyT">
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="20" id="1mT-95-EBR"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                    <color key="textColor" white="0.66000000000000003" alpha="1" colorSpace="calibratedWhite"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="©2016 Fabian Ehlert" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4R8-p8-EVu">
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="20" id="luC-5Z-oeQ"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                    <color key="textColor" white="0.66000000000000003" alpha="1" colorSpace="calibratedWhite"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="RoundAppIcon" translatesAutoresizingMaskIntoConstraints="NO" id="Gb2-IP-hQb">
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="60" id="5dF-dh-fun"/>
+                                        <constraint firstAttribute="width" constant="60" id="uFT-p7-OzK"/>
+                                    </constraints>
+                                </imageView>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="4R8-p8-EVu" firstAttribute="leading" secondItem="v3W-rt-Eyj" secondAttribute="leading" constant="15" id="AI4-si-1hb"/>
+                                <constraint firstAttribute="trailing" secondItem="4R8-p8-EVu" secondAttribute="trailing" constant="15" id="Icf-MA-haz"/>
+                                <constraint firstItem="Gb2-IP-hQb" firstAttribute="centerX" secondItem="v3W-rt-Eyj" secondAttribute="centerX" id="U5v-yN-AGe"/>
+                                <constraint firstItem="cho-oX-q0Y" firstAttribute="leading" secondItem="v3W-rt-Eyj" secondAttribute="leading" constant="15" id="YbG-Vq-66v"/>
+                                <constraint firstItem="cho-oX-q0Y" firstAttribute="top" secondItem="Gb2-IP-hQb" secondAttribute="bottom" constant="6" id="ZKh-96-iKI"/>
+                                <constraint firstItem="4R8-p8-EVu" firstAttribute="top" secondItem="QBT-E1-vyT" secondAttribute="bottom" constant="-2" id="cCd-bg-5yB"/>
+                                <constraint firstItem="QBT-E1-vyT" firstAttribute="leading" secondItem="v3W-rt-Eyj" secondAttribute="leading" constant="15" id="fNf-7S-NhL"/>
+                                <constraint firstAttribute="trailing" secondItem="cho-oX-q0Y" secondAttribute="trailing" constant="15" id="opU-yo-WK0"/>
+                                <constraint firstAttribute="trailing" secondItem="QBT-E1-vyT" secondAttribute="trailing" constant="15" id="pDi-Sk-43P"/>
+                                <constraint firstItem="QBT-E1-vyT" firstAttribute="top" secondItem="cho-oX-q0Y" secondAttribute="bottom" constant="5" id="t4f-f5-WGP"/>
+                                <constraint firstItem="Gb2-IP-hQb" firstAttribute="top" secondItem="v3W-rt-Eyj" secondAttribute="top" id="x3n-Ja-cyy"/>
+                            </constraints>
+                        </view>
                         <sections>
                             <tableViewSection headerTitle="About" id="ehQ-wo-PQe">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="90" id="tNL-22-39u">
-                                        <rect key="frame" x="0.0" y="120" width="375" height="90"/>
+                                        <rect key="frame" x="0.0" y="119.5" width="375" height="90"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="tNL-22-39u" id="pYI-5I-08v">
                                             <frame key="frameInset" width="375" height="89"/>
@@ -61,7 +111,7 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="52" id="H5y-zk-9Qt">
-                                        <rect key="frame" x="0.0" y="210" width="375" height="52"/>
+                                        <rect key="frame" x="0.0" y="209.5" width="375" height="52"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="H5y-zk-9Qt" id="edc-Eo-Zbq">
                                             <frame key="frameInset" width="342" height="51"/>
@@ -89,7 +139,7 @@
                             <tableViewSection headerTitle="Third party" id="wYn-Up-I70">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="148" id="5to-NJ-vSa">
-                                        <rect key="frame" x="0.0" y="318" width="375" height="148"/>
+                                        <rect key="frame" x="0.0" y="317.5" width="375" height="148"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="5to-NJ-vSa" id="JfM-oK-xkr">
                                             <frame key="frameInset" width="342" height="147"/>
@@ -124,7 +174,7 @@ Source is available on GitHub: https://github.com/marmelroy/Interpolate</string>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="90" id="OWe-zG-WJK">
-                                        <rect key="frame" x="0.0" y="466" width="375" height="90"/>
+                                        <rect key="frame" x="0.0" y="465.5" width="375" height="90"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="OWe-zG-WJK" id="J4m-s3-F1b">
                                             <frame key="frameInset" width="342" height="89"/>
@@ -229,5 +279,8 @@ Source is available on GitHub: https://github.com/marmelroy/Interpolate</string>
             <point key="canvasLocation" x="249" y="105"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="RoundAppIcon" width="60" height="60"/>
+    </resources>
     <color key="tintColor" red="1" green="0.57647058823529407" blue="0.16078431372549018" alpha="1" colorSpace="calibratedRGB"/>
 </document>

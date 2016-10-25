@@ -14,63 +14,12 @@ class CopyrightTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.setupFooter()
     }
 
-    override func viewDidLayoutSubviews() {
-        super.viewDidLayoutSubviews()
-    }
-    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
 
-    fileprivate func setupFooter() {
-        print(#function)
-        let footer = UIView(frame: CGRect(x: 0, y: 0, width: tableView.frame.size.width, height: 150))
-        footer.backgroundColor = .clear
-        
-        let logo = UIImageView(frame: CGRect(x: (tableView.frame.size.width / 2) - 30, y: 0, width: 60, height: 60))
-        logo.backgroundColor = .clear
-        logo.contentMode = .scaleAspectFit
-        logo.image = #imageLiteral(resourceName: "RoundAppIcon")
-        
-        footer.addSubview(logo)
-        
-        
-        let nameLabel = UILabel(frame: CGRect(x: 15, y: 66, width: tableView.frame.size.width - 30, height: 20))
-        nameLabel.backgroundColor = .clear
-        nameLabel.textColor = UIColor.darkGray
-        nameLabel.font = UIFont.systemFont(ofSize: 17, weight: UIFontWeightMedium)
-        nameLabel.text = "Lightsy"
-        nameLabel.textAlignment = .center
-        
-        footer.addSubview(nameLabel)
-        
-        
-        let galaxyLabel = UILabel(frame: CGRect(x: 15, y: 91, width: tableView.frame.size.width - 30, height: 20))
-        galaxyLabel.backgroundColor = .clear
-        galaxyLabel.textColor = UIColor.lightGray
-        galaxyLabel.font = UIFont.systemFont(ofSize: 15, weight: UIFontWeightMedium)
-        galaxyLabel.text = "Crafted with ❤️ in Milky Way Galaxy."
-        galaxyLabel.textAlignment = .center
-        
-        footer.addSubview(galaxyLabel)
-        
-        
-        let copyrightLabel = UILabel(frame: CGRect(x: 15, y: 109, width: tableView.frame.size.width - 30, height: 20))
-        copyrightLabel.backgroundColor = .clear
-        copyrightLabel.textColor = UIColor.lightGray
-        copyrightLabel.font = UIFont.systemFont(ofSize: 15, weight: UIFontWeightRegular)
-        copyrightLabel.text = "©2016 Fabian Ehlert"
-        copyrightLabel.textAlignment = .center
-        
-        footer.addSubview(copyrightLabel)
-
-
-        tableView.tableFooterView = footer
-    }
-    
     
     // MARK: UITableViewDelegate
     
