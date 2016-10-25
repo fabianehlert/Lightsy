@@ -13,6 +13,7 @@
 		1FB347BB1DBE213A00DC5C7F /* Light.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB347BA1DBE213A00DC5C7F /* Light.swift */; };
 		1FB347C01DBE216B00DC5C7F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FB347BE1DBE216B00DC5C7F /* LaunchScreen.storyboard */; };
 		1FB347C11DBE216B00DC5C7F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FB347BF1DBE216B00DC5C7F /* Main.storyboard */; };
+		1FEEC7A61DBFDD7700B8A6E0 /* AppSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FEEC7A51DBFDD7700B8A6E0 /* AppSetup.swift */; };
 		1FF58C8D1DBE28CC003D0784 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF58C8C1DBE28CC003D0784 /* Strings.swift */; };
 		1FF58C911DBE2A8A003D0784 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF58C901DBE2A8A003D0784 /* ViewController.swift */; };
 		1FF58C941DBE37AE003D0784 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF58C931DBE37AE003D0784 /* Extensions.swift */; };
@@ -29,6 +30,7 @@
 		1FB347BA1DBE213A00DC5C7F /* Light.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Light.swift; path = Lightsy/Models/Light.swift; sourceTree = SOURCE_ROOT; };
 		1FB347BE1DBE216B00DC5C7F /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = Lightsy/Storyboards/LaunchScreen.storyboard; sourceTree = SOURCE_ROOT; };
 		1FB347BF1DBE216B00DC5C7F /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Lightsy/Storyboards/Main.storyboard; sourceTree = SOURCE_ROOT; };
+		1FEEC7A51DBFDD7700B8A6E0 /* AppSetup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppSetup.swift; path = Lightsy/AppSetup.swift; sourceTree = SOURCE_ROOT; };
 		1FF58C8C1DBE28CC003D0784 /* Strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Strings.swift; path = Resources/Strings.swift; sourceTree = SOURCE_ROOT; };
 		1FF58C8E1DBE29E6003D0784 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = Resources/Info.plist; sourceTree = SOURCE_ROOT; };
 		1FF58C901DBE2A8A003D0784 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = Lightsy/Controller/ViewController.swift; sourceTree = SOURCE_ROOT; };
@@ -97,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				1FB347B41DBE211C00DC5C7F /* AppDelegate.swift */,
+				1FEEC7A51DBFDD7700B8A6E0 /* AppSetup.swift */,
 				1FF58C8F1DBE2A82003D0784 /* Controller */,
 				1F48DB1B1DBCCE8000BA2EB6 /* Views */,
 				1F48DB1C1DBCD06900BA2EB6 /* Models */,
@@ -279,6 +282,7 @@
 				1FF58C911DBE2A8A003D0784 /* ViewController.swift in Sources */,
 				1FF58C941DBE37AE003D0784 /* Extensions.swift in Sources */,
 				1FB347B51DBE211C00DC5C7F /* AppDelegate.swift in Sources */,
+				1FEEC7A61DBFDD7700B8A6E0 /* AppSetup.swift in Sources */,
 				1FF58C961DBE8239003D0784 /* CopyrightTableViewController.swift in Sources */,
 				1FB347B91DBE212A00DC5C7F /* LightView.swift in Sources */,
 				1FF58C8D1DBE28CC003D0784 /* Strings.swift in Sources */,
