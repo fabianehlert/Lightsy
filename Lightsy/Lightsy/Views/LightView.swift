@@ -23,6 +23,7 @@ class LightView: UIView {
     
     // MARK: Gestures
     
+    var p: CGFloat = 0.0
     fileprivate var guidePresent = false
     fileprivate var fingerImageView: UIImageView?
     fileprivate var lastLocation = CGPoint.zero
@@ -77,6 +78,11 @@ class LightView: UIView {
     // MARK: Setup
     
     fileprivate func setupUI() {
+        NotificationCenter.default.addObserver(self,
+                                               selector: #selector(saveState),
+                                               name: NSNotification.Name(NotificationName.appWillTerminate.rawValue),
+                                               object: nil)
+        
         self.addGestureRecognizer(self.tapRecognizer)
         self.addGestureRecognizer(self.panRecognizer)
         
@@ -111,7 +117,7 @@ class LightView: UIView {
             self?.temperatureLabel.text = "\(temp)K"
         })
 
-        self.goTo(progress: 0.0, duration: 0.0)
+        self.goTo(progress: self.storedState(), duration: 0.0)
     }
     
     
@@ -194,14 +200,14 @@ extension LightView {
     
     /// Go to specific progress position.
     fileprivate func goTo(progress: CGFloat, duration: CGFloat = 0.7) {
-        let p = progress.fitTo(range: 0.0...1.0)
+        self.p = progress.fitTo(range: 0.0...1.0)
         
         if duration != 0.0 {
-            self.color?.animate(p, duration: duration)
-            self.temperature?.animate(p, duration: duration)
+            self.color?.animate(self.p, duration: duration)
+            self.temperature?.animate(self.p, duration: duration)
         } else {
-            self.color?.progress = p
-            self.temperature?.progress = p
+            self.color?.progress = self.p
+            self.temperature?.progress = self.p
         }
     }
 }
@@ -242,5 +248,17 @@ extension LightView {
                     fingerImageView.removeFromSuperview()
             })
         }
+    }
+}
+
+extension LightView {
+    func saveState() {
+        UserDefaults.standard.set(self.p, forKey: Defaults.storedProgress.rawValue)
+        UserDefaults.standard.synchronize()
+    }
+    
+    fileprivate func storedState() -> CGFloat {
+        if let s = UserDefaults.standard.value(forKey: Defaults.storedProgress.rawValue) as? CGFloat { return s }
+        return 0.0
     }
 }

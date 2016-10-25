@@ -10,7 +10,13 @@ import Foundation
 
 enum Defaults: String {
     case
-    firstAppLaunch = "letLightsyFirstAppLaunch"
+    firstAppLaunch = "letLightsyFirstAppLaunch",
+    storedProgress = "letStoredProgress"
+}
+
+enum NotificationName: String {
+    case
+    appWillTerminate = "notificationAppWillTerminate"
 }
 
 enum Segue: String {

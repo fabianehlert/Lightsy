@@ -17,5 +17,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return true
     }
 
+    func applicationDidEnterBackground(_ application: UIApplication) {
+        NotificationCenter.default.post(name: Notification.Name(NotificationName.appWillTerminate.rawValue), object: nil)
+    }
+
 }
 
