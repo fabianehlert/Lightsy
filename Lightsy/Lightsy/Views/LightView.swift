@@ -224,7 +224,7 @@ extension LightView {
         self.addSubview(fingerImageView)
         
         UIView.animate(withDuration: 3.0, delay: 0.0, options: [.repeat, .autoreverse], animations: {
-            fingerImageView.frame = fingerImageView.frame.offsetBy(dx: 0, dy: 250)
+            fingerImageView.frame = fingerImageView.frame.offsetBy(dx: 0, dy: self.frame.height/2.6)
         }, completion: nil)
     }
     
