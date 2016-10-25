@@ -11,6 +11,7 @@ import Foundation
 enum Defaults: String {
     case
     firstAppLaunch = "letLightsyFirstAppLaunch",
+    shouldStoreProgress = "letShouldStoreProgress",
     storedProgress = "letStoredProgress"
 }
 

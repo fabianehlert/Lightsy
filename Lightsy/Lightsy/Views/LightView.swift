@@ -117,7 +117,7 @@ class LightView: UIView {
             self?.temperatureLabel.text = "\(temp)K"
         })
 
-        self.goTo(progress: self.storedState(), duration: 0.0)
+        self.goTo(progress: AppSetup.sharedState.shouldSaveState ? self.storedState() : 0.0, duration: 0.0)
     }
     
     

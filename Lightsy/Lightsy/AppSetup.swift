@@ -14,11 +14,11 @@ class AppSetup {
     var isTesting = false
     var shouldSaveState: Bool {
         get {
-            print("Getting state saver")
-            return false
+            return UserDefaults.standard.bool(forKey: Defaults.shouldStoreProgress.rawValue)
         }
-        set {
-            print("Setting state saver")
+        set (newValue) {
+            UserDefaults.standard.set(newValue, forKey: Defaults.shouldStoreProgress.rawValue)
+            UserDefaults.standard.synchronize()
         }
     }
     
