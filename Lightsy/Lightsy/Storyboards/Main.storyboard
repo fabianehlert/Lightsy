@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11521.1" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11517.1"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -90,7 +90,7 @@
                             <tableViewSection headerTitle="About" id="ehQ-wo-PQe">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="90" id="tNL-22-39u">
-                                        <rect key="frame" x="0.0" y="119.5" width="375" height="90"/>
+                                        <rect key="frame" x="0.0" y="120" width="375" height="90"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="tNL-22-39u" id="pYI-5I-08v">
                                             <frame key="frameInset" width="375" height="89"/>
@@ -111,7 +111,7 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="52" id="H5y-zk-9Qt">
-                                        <rect key="frame" x="0.0" y="209.5" width="375" height="52"/>
+                                        <rect key="frame" x="0.0" y="210" width="375" height="52"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="H5y-zk-9Qt" id="edc-Eo-Zbq">
                                             <frame key="frameInset" width="342" height="51"/>
@@ -138,11 +138,11 @@
                             </tableViewSection>
                             <tableViewSection headerTitle="Third party" id="wYn-Up-I70">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="148" id="5to-NJ-vSa">
-                                        <rect key="frame" x="0.0" y="317.5" width="375" height="148"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="148" id="5to-NJ-vSa">
+                                        <rect key="frame" x="0.0" y="318" width="375" height="148"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="5to-NJ-vSa" id="JfM-oK-xkr">
-                                            <frame key="frameInset" width="342" height="147"/>
+                                            <frame key="frameInset" width="375" height="147.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Interpolate" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GEn-EC-afb">
@@ -169,15 +169,15 @@ Source is available on GitHub: https://github.com/marmelroy/Interpolate</string>
                                                 <constraint firstItem="lBW-kZ-By0" firstAttribute="top" secondItem="GEn-EC-afb" secondAttribute="bottom" id="Y13-T2-ENK"/>
                                                 <constraint firstAttribute="bottom" secondItem="lBW-kZ-By0" secondAttribute="bottom" constant="15" id="dle-VN-Wel"/>
                                                 <constraint firstItem="GEn-EC-afb" firstAttribute="leading" secondItem="JfM-oK-xkr" secondAttribute="leading" constant="15" id="eRv-af-rYd"/>
-                                                <constraint firstAttribute="trailing" secondItem="lBW-kZ-By0" secondAttribute="trailing" id="wFM-ps-zM8"/>
+                                                <constraint firstAttribute="trailing" secondItem="lBW-kZ-By0" secondAttribute="trailing" constant="15" id="wFM-ps-zM8"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="90" id="OWe-zG-WJK">
-                                        <rect key="frame" x="0.0" y="465.5" width="375" height="90"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="90" id="OWe-zG-WJK">
+                                        <rect key="frame" x="0.0" y="466" width="375" height="90"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="OWe-zG-WJK" id="J4m-s3-F1b">
-                                            <frame key="frameInset" width="342" height="89"/>
+                                            <frame key="frameInset" width="375" height="89.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Icons8" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1ha-Xr-pwh">
@@ -196,7 +196,7 @@ Source is available on GitHub: https://github.com/marmelroy/Interpolate</string>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstAttribute="trailing" secondItem="1ha-Xr-pwh" secondAttribute="trailing" constant="10" id="0uF-H4-Zed"/>
-                                                <constraint firstAttribute="trailing" secondItem="yMC-Ym-ZY8" secondAttribute="trailing" id="8Dk-Yk-1Lr"/>
+                                                <constraint firstAttribute="trailing" secondItem="yMC-Ym-ZY8" secondAttribute="trailing" constant="15" id="8Dk-Yk-1Lr"/>
                                                 <constraint firstItem="1ha-Xr-pwh" firstAttribute="leading" secondItem="J4m-s3-F1b" secondAttribute="leading" constant="15" id="8yf-CC-SIM"/>
                                                 <constraint firstItem="yMC-Ym-ZY8" firstAttribute="leading" secondItem="J4m-s3-F1b" secondAttribute="leading" constant="15" id="D2e-bV-TX3"/>
                                                 <constraint firstItem="1ha-Xr-pwh" firstAttribute="top" secondItem="J4m-s3-F1b" secondAttribute="top" constant="15" id="L2O-sI-e65"/>
