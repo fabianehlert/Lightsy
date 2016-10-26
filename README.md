@@ -16,11 +16,15 @@
 ## Here is how it works
 
 ### Overview of the colors
-> [http://planetpixelemporium.com/tutorialpages/light.html](http://planetpixelemporium.com/tutorialpages/light.html)
+As of right now there is now public API from Apple that allows us developers to access the color temperature of a device's screen like Night Shift (introduced in iOS 9.3) does. We can only simulate it by setting the `backgroundColor` of an `UIView` object to a color that comes close the what it look in real life. If you want to learn more about it, checkout this site I stumbled upon and found really helpful. It's also the site I took the RGB values for Lightsy from: [http://planetpixelemporium.com/tutorialpages/light.html](http://planetpixelemporium.com/tutorialpages/light.html)
+
+Here is an excerpt of four of the colors of the entire spectrum Lightsy can display:
 
 ![](res/Overview-Colors.jpg)
 
 ### How you can interact with Lightsy
+It's as simple as sliding your finger vertically on the screen to change the color temperature.
+
 <center>
 ![](res/Demo.gif)
 ![](res/Me.gif)
