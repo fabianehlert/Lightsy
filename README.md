@@ -7,7 +7,13 @@
 [![Open Source by Default](https://img.shields.io/badge/Open%20Source-Default-blue.svg)](https://github.com/fabianehlert)
 
 ## About
-Because there is nothing like it.
+<left>
+<img src="res/Artwork.png" alt="Lightsy" style="width: 200px;"/>
+</left>
+<br><br>
+**[Lightsy is available on the App Store](https://appstore.com/lightsy)**
+
+> Because there is nothing like it.
 
 ## Examples
 
