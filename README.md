@@ -20,6 +20,7 @@ Because there is nothing like it.
 For dependency management, [CocoaPods](https://github.com/CocoaPods/CocoaPods) is being used. As the `Pods` folder is not included, installing [CocoaPods](https://github.com/CocoaPods/CocoaPods) and the dependencies with it is required to run the project.
 
 If you haven't installed it on your system yet, continue with the following steps:
+
 1. `sudo gem install cocoapods`
  - will ask for your password
 2. `pod setup`
