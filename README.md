@@ -11,7 +11,10 @@
 <br><br>
 **[Lightsy is available on the App Store](https://appstore.com/lightsy)**
 
-> Because there is nothing like it.
+> Lightsy helps you recording videos and taking photos of yourself at night.
+> <br>It does that by letting you adjust your devices screen to a color that fits the environment you are in. This is accomplished by simply sliding your finger over your devices screen vertically.
+
+> If you have been in a situation where you wanted to record a video of yourself and recognized that the natural light in the environment was just to dark, you probably came up with the idea of using your cell phone's screen as a light booster. That's a great idea! An iPhone screen represents an almost perfectly illuminated light panel like you would know from professional movie sets. But it has an issue. As not every environment is the same, you would end up getting your face lit up in a different tone as you can't adjust your phones white tone. With Lightsy you can. Just open Lightsy and slide your finger accross the screen until the color suits you perfectly.
 
 ## Here is how it works
 
