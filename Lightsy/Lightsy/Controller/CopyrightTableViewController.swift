@@ -33,7 +33,7 @@ class CopyrightTableViewController: UITableViewController {
         if indexPath.section == 1 {
             switch indexPath.row {
             case 0:
-                UIApplication.shared.openURL(URL(string: "https://www.fabianehlert.com")!)
+                UIApplication.shared.openURL(URL(string: "https://github.com/fabianehlert/Lightsy")!)
             default:
                 break
             }
