@@ -7,17 +7,23 @@
 [![Open Source by Default](https://img.shields.io/badge/Open%20Source-Default-blue.svg)](https://github.com/fabianehlert)
 
 ## About
-<img src="res/Artwork.png" width="200">
+<img src="res/Artwork.png" width="250">
 <br><br>
 **[Lightsy is available on the App Store](https://appstore.com/lightsy)**
 
 > Because there is nothing like it.
 
-## Examples
+## Here is how it works
 
+### Overview of the colors
+> [http://planetpixelemporium.com/tutorialpages/light.html](http://planetpixelemporium.com/tutorialpages/light.html)
+
+![](res/Overview-Colors.jpg)
+
+### How you can interact with Lightsy
 <center>
-![](res/1.gif)
-![](res/2.gif)
+![](res/Demo.gif)
+![](res/Me.gif)
 </center>
 
 ## Setup
