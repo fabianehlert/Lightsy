@@ -7,9 +7,7 @@
 [![Open Source by Default](https://img.shields.io/badge/Open%20Source-Default-blue.svg)](https://github.com/fabianehlert)
 
 ## About
-<left>
-<img src="res/Artwork.png" alt="Lightsy" style="width: 200px;"/>
-</left>
+<img src="res/Artwork.png" width="200">
 <br><br>
 **[Lightsy is available on the App Store](https://appstore.com/lightsy)**
 
