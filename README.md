@@ -8,8 +8,7 @@
 
 ## About
 <img src="res/Artwork.png" width="250">
-<br><br>
-**[Lightsy is available on the App Store](https://appstore.com/lightsy)**
+
 
 > Lightsy helps you recording videos and taking photos of yourself at night.
 > <br>It does that by letting you adjust your devices screen to a color that fits the environment you are in. This is accomplished by simply sliding your finger over your devices screen vertically.
