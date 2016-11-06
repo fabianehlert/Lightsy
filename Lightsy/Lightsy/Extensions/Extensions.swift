@@ -14,10 +14,23 @@ extension UIColor {
     }
 }
 
+/*
 extension CGFloat {
     func fitTo(range: ClosedRange<CGFloat>) -> CGFloat {
         if range ~= self { return self }
         return [range.lowerBound, range.upperBound].enumerated().min(by: { abs($0.1 - self) < abs($1.1 - self) })?.element ?? 0.0
+    }
+}
+*/
+
+extension Comparable {
+    func fitTo(range: ClosedRange<Self>) -> Self {
+        if self < range.lowerBound {
+            return range.lowerBound
+        } else if self > range.upperBound {
+            return range.upperBound
+        }
+        return self
     }
 }
 
