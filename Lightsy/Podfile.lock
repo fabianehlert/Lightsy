@@ -1,11 +1,11 @@
 PODS:
-  - Interpolate (0.3.1)
+  - Interpolate (0.4.0)
 
 DEPENDENCIES:
   - Interpolate (~> 0.3)
 
 SPEC CHECKSUMS:
-  Interpolate: cd6b47587c8ae580a241782b9415df8dff142f14
+  Interpolate: 682895f1a2fc091da0ba53ccb018520daf51f8fd
 
 PODFILE CHECKSUM: ef5ab6eb5966fb13dbe62bbf1554b70f99279d1f
 
